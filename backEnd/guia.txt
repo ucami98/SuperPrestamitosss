@@ -1,0 +1,8 @@
+tengo mi Prestamo como funcion enbackend
+
+tengo que buscar un GETPrestamo para consultar elservicio desde el backend(ese esta en servicios
+
+busco en services el consultar AQUIdesdeElServidorBackend y algo asi puedo consultar desde angular elback)
+
+
+tengo que invocar en components ts el private aqiservice para llamarlo y consultar desde el backend (el que dice subscribe)

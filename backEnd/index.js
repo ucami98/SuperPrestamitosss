@@ -15,7 +15,6 @@
   
   const Prestamo = (req) => {
   let Name = req.query.Name
-  //console.log("Prueba"+Salary)
   let Salary = req.query.Salary;
   let Duration = req.query.Duration;
   let Work = req.query.Work;
@@ -54,4 +53,4 @@ app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`) //root -> localhost:3030
 })
 
-// terminar de cambiar los document.get element byid quitar el comentado
+// ya todo funciona, ahora necesito que la respuesta pase de la consola al modal, es lo unico que falta y luego ver lo del correo

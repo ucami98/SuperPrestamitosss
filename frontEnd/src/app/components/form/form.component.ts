@@ -15,6 +15,7 @@ export class FormComponent implements OnInit {
   Salary:String;
   Duration:String;
   Work:String;
+  result:String;
   
 
   constructor(private localStrgService:LocalStrgService) {
@@ -25,6 +26,8 @@ export class FormComponent implements OnInit {
     this.Salary="";
     this.Duration="";
     this.Work="";
+    this.result="";
+    
    }
 
   ngOnInit(): void {
@@ -37,6 +40,9 @@ export class FormComponent implements OnInit {
    this.localStrgService.consultarPrestamo(this.Name,this.Salary,this.Duration,this.Work).subscribe((data)=>{
       console.log("respuesta del servidor ")
      console.log(data)
+     let respuesta = JSON.stringify(data)
+     const result = document.getElementById("Result")!;
+     result.innerHTML = "Respuesta a la solicitud" + respuesta  ;
       
     
       this.lockButton=false;
